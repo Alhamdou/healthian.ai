@@ -1,6 +1,5 @@
 // ignore_for_file: prefer_const_constructors, deprecated_member_use
 
-import 'package:app/utls/math_utils.dart';
 import 'package:flutter/material.dart';
 
 import '../../machine learning/ml_model.dart';
@@ -31,7 +30,7 @@ class _DocHomePageState extends State<DocHomePage> {
                 child: Text("Hi doc welcome on board"),
               )),
             ),
-            RaisedButton(
+            TextButton(
                 child: Text(
                   "Pneumonia Disease Prediction!",
                   style: TextStyle(color: Colors.black),

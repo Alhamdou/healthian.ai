@@ -6,7 +6,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
-import '../screens/homePage.dart';
 
 class DocSignUp extends StatefulWidget {
   const DocSignUp({Key? key}) : super(key: key);
@@ -126,6 +125,7 @@ class _DocSignUpState extends State<DocSignUp> {
           if (!regex.hasMatch(value)) {
             return ("Enter Valid Password(Min. 6 Character)");
           }
+          return null;
         },
         onSaved: (value) {
           firstNameEditingController.text = value!;
@@ -302,7 +302,7 @@ class _DocSignUpState extends State<DocSignUp> {
     Navigator.pushAndRemoveUntil(
         (context),
         MaterialPageRoute(
-            builder: (context) => MyModel(
+            builder: (context) => const MyModel(
                 // urlImage: '',
                 // name: '',
                 )),

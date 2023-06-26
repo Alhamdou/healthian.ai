@@ -45,7 +45,7 @@ class _InsurancePageState extends State<InsurancePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Insurance Policies'),
+        title: const Text('Insurance Policies'),
       ),
       body: ListView.builder(
         itemCount: _policies.length,
@@ -58,12 +58,12 @@ class _InsurancePageState extends State<InsurancePage> {
             },
             child: Card(
               elevation: 2.0,
-              margin: EdgeInsets.all(10.0),
+              margin: const EdgeInsets.all(10.0),
               color: _selectedIndex == index ? Colors.grey[300] : Colors.white,
               child: ListTile(
                 title: Text(_policies[index].name),
                 subtitle: Text(_policies[index].description),
-                trailing: Icon(Icons.arrow_forward_ios),
+                trailing: const Icon(Icons.arrow_forward_ios),
               ),
             ),
           );
@@ -74,20 +74,20 @@ class _InsurancePageState extends State<InsurancePage> {
           : BottomAppBar(
               child: Container(
                 height: 60.0,
-                padding: EdgeInsets.all(10.0),
+                padding: const EdgeInsets.all(10.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
                       _policies[_selectedIndex].name,
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 20.0,
                       ),
                     ),
                     ElevatedButton(
                       onPressed: () {},
-                      child: Text('Buy Policy'),
+                      child: const Text('Buy Policy'),
                     ),
                   ],
                 ),

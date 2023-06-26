@@ -2,16 +2,15 @@
 
 import 'package:app/doctors/doc%20_login.dart';
 import 'package:app/doctors/doctots_signu%5Bp.dart';
-import 'package:app/screens/pages/are_you_doctor.dart';
 import 'package:app/utls/colors.dart';
 import 'package:app/utls/math_utils.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class RealDoctors extends StatefulWidget {
   var valueFirst = false;
+
+  RealDoctors({Key? key}) : super(key: key);
 
   @override
   State<RealDoctors> createState() => _RealDoctorsState();
@@ -82,8 +81,8 @@ class _RealDoctorsState extends State<RealDoctors> {
               ],
             ),
             // ignore: deprecated_member_use
-            RaisedButton(
-                color: redColor,
+            TextButton(
+                // color: redColor,
                 onPressed: () {
                   Navigator.of(context).push(
                       MaterialPageRoute(builder: (context) => DocSignUp()));
@@ -92,8 +91,8 @@ class _RealDoctorsState extends State<RealDoctors> {
                   "SignUp",
                   style: TextStyle(color: whiteColor),
                 )),
-            RaisedButton(
-                color: redColor,
+            TextButton(
+                // color: redColor,
                 onPressed: () {
                   Navigator.of(context).push(
                       MaterialPageRoute(builder: (context) => DocLogin()));

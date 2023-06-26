@@ -19,7 +19,7 @@ class SignOutScreen extends StatelessWidget {
             height: 200,
             width: 150,
           ),
-          Text("Thanking for for checing on us!"),
+          const Text("Thanking for for checing on us!"),
           Center(
             child: ElevatedButton(
               child: const Text('Sign Out'),

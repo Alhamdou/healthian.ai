@@ -119,7 +119,7 @@ class _HomePageState extends State<HomePage> {
                 icon: const Icon(Icons.settings), label: "Settings"),
           ],
         ),
-        drawer: const NavigationDrawer(),
+        drawer: const NavigationDaw(),
         // body: HomeScreen(),
 
         body: const HomeScreen());
@@ -426,7 +426,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   fontSize: 18),
             ),
           ),
-          Container(
+          SizedBox(
             height: 205,
             child: ListView.builder(
               shrinkWrap: true,
@@ -762,7 +762,7 @@ class _HomeScreenState extends State<HomeScreen> {
           const SizedBox(
             height: 15,
           ),
-          Container(
+          SizedBox(
             height: 262,
             child: ListView.builder(
               shrinkWrap: true,
@@ -810,7 +810,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               Navigator.push(context, MaterialPageRoute(builder: (context)=>Appointments()));
                             },
                             style: ElevatedButton.styleFrom(
-                                primary: const Color(0xFF2C53B1)),
+                                backgroundColor: const Color(0xFF2C53B1)),
                             child: Padding(
                                 padding: const EdgeInsets.only(
                                     left: 10.0, right: 10),

@@ -5,11 +5,11 @@ class MyHeader extends StatelessWidget {
   final String imageUrl;
   final Widget child;
 
-  const MyHeader({
+  const MyHeader({Key? key, 
     required this.height,
     required this.imageUrl,
     required this.child,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -100,7 +100,7 @@ class _MedicalRecordScreenState extends State<MedicalRecordScreen> {
                 decoration: InputDecoration(labelText: 'Medications'),
               ),
               SizedBox(height: 16),
-              RaisedButton(
+              TextButton(
                 onPressed: addMedicalRecord,
                 child: Text('Add Medical Record'),
               ),

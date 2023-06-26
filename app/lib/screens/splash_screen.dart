@@ -8,8 +8,6 @@ import 'package:flutter_svg/svg.dart';
 
 import '../Patient Login/Login.dart';
 import '../patient registration/registration.dart';
-import '../utls/colors.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 // import 'package:google_sign_in/google_sign_in.dart';
 
 

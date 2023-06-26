@@ -1,12 +1,10 @@
 // ignore_for_file: file_names, body_might_complete_normally_nullable
 
 import 'package:app/machine%20learning/ml_model.dart';
-import 'package:app/screens/homePage.dart';
 import 'package:app/utls/colors.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 import '../patient registration/registration.dart';
 import 'popular_doctors/doc_home_page.dart';
@@ -99,7 +97,7 @@ class _DocLoginState extends State<DocLogin> {
           minWidth: MediaQuery.of(context).size.width,
           onPressed: () {
             signIn(emailController.text, passwordController.text);
-            MyModel();
+            const MyModel();
           },
           child: const Text(
             "Login",

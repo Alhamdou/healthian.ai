@@ -28,8 +28,8 @@ class _ConsultationState extends State<Consultation> {
               SizedBox(
                 height: 15,
               ),
-              RaisedButton(
-                  color: redColor,
+              TextButton(
+                  // color: redColor,
                   onPressed: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) => Doctors()));

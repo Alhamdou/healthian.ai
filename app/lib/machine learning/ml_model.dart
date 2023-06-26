@@ -109,10 +109,10 @@ class _MyModelState extends State<MyModel> {
                     padding: EdgeInsets.only(left: 10, right: 10),
                     height: 50,
                     width: double.infinity,
-                    child: RaisedButton(
-                        color: Colors.teal[800],
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10)),
+                    child: TextButton(
+                        // color: Colors.teal[800],
+                        // shape: RoundedRectangleBorder(
+                        //     borderRadius: BorderRadius.circular(10)),
                         child: Text('Capture',
                             style: GoogleFonts.roboto(fontSize: 18)),
                         onPressed: () {
@@ -124,10 +124,10 @@ class _MyModelState extends State<MyModel> {
                     padding: EdgeInsets.only(left: 10, right: 10),
                     height: 50,
                     width: double.infinity,
-                    child: RaisedButton(
-                        color: Colors.teal[800],
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10)),
+                    child: TextButton(
+                        // color: Colors.teal[800],
+                        // shape: RoundedRectangleBorder(
+                        //     borderRadius: BorderRadius.circular(10)),
                         child: Text('Gallery',
                             style: GoogleFonts.roboto(fontSize: 18)),
                         onPressed: () {

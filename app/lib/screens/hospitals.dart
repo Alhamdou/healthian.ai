@@ -19,6 +19,8 @@ class Hospital {
 }
 
 class Hospitals extends StatefulWidget {
+  const Hospitals({Key? key}) : super(key: key);
+
   @override
   _HospitalsState createState() => _HospitalsState();
 }
@@ -131,7 +133,7 @@ class _HospitalsState extends State<Hospitals> {
       theme: ThemeData(primarySwatch: Colors.blue),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Hospital List'),
+          title: const Text('Hospital List'),
         ),
         body: ListView.builder(
           itemCount: hospitals.length,
@@ -159,7 +161,7 @@ class _HospitalsState extends State<Hospitals> {
 class HospitalCard extends StatelessWidget {
   final Hospital hospital;
 
-  HospitalCard({required this.hospital});
+  const HospitalCard({Key? key, required this.hospital}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -181,7 +183,7 @@ class HospitalCard extends StatelessWidget {
             Row(
               children: [
                 _buildRatingStars(hospital.ratings),
-                SizedBox(width: 4),
+                const SizedBox(width: 4),
                 Text(hospital.ratings.toString()),
               ],
             ),
@@ -195,8 +197,8 @@ class HospitalCard extends StatelessWidget {
     List<Widget> stars = [];
     for (int i = 0; i < 5; i++) {
       Icon starIcon = i < rating
-          ? Icon(Icons.star, color: Colors.amber)
-          : Icon(Icons.star_border, color: Colors.amber);
+          ? const Icon(Icons.star, color: Colors.amber)
+          : const Icon(Icons.star_border, color: Colors.amber);
       stars.add(starIcon);
     }
     return Row(children: stars);
@@ -204,5 +206,5 @@ class HospitalCard extends StatelessWidget {
 }
 
 void main() {
-  runApp(Hospitals());
+  runApp(const Hospitals());
 }

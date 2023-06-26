@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class PaymentPage extends StatefulWidget {
+  const PaymentPage({Key? key}) : super(key: key);
+
   @override
   _PaymentPageState createState() => _PaymentPageState();
 }
@@ -25,7 +27,7 @@ class _PaymentPageState extends State<PaymentPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('HPay'),
+        title: const Text('HPay'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -36,7 +38,7 @@ class _PaymentPageState extends State<PaymentPage> {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 TextFormField(
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     labelText: 'Card Number',
                   ),
                   keyboardType: TextInputType.number,
@@ -52,12 +54,12 @@ class _PaymentPageState extends State<PaymentPage> {
                     });
                   },
                 ),
-                SizedBox(height: 16),
+                const SizedBox(height: 16),
                 Row(
                   children: [
                     Expanded(
                       child: TextFormField(
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           labelText: 'Expiry Date',
                         ),
                         keyboardType: TextInputType.datetime,
@@ -74,10 +76,10 @@ class _PaymentPageState extends State<PaymentPage> {
                         },
                       ),
                     ),
-                    SizedBox(width: 16),
+                    const SizedBox(width: 16),
                     Expanded(
                       child: TextFormField(
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           labelText: 'CVV',
                         ),
                         keyboardType: TextInputType.number,
@@ -96,12 +98,12 @@ class _PaymentPageState extends State<PaymentPage> {
                     ),
                   ],
                 ),
-                SizedBox(height: 32),
+                const SizedBox(height: 32),
                 _isLoading
-                    ? CircularProgressIndicator()
+                    ? const CircularProgressIndicator()
                     : ElevatedButton(
                         onPressed: _submitPaymentForm,
-                        child: Text('Save Card'),
+                        child: const Text('Save Card'),
                       ),
               ],
             ),

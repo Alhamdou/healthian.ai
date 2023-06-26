@@ -20,14 +20,14 @@ import '../pages/orders.dart';
 import '../pages/reminders.dart';
 import '../pages/signout.dart';
 
-class NavigationDrawer extends StatefulWidget {
-  const NavigationDrawer({Key? key}) : super(key: key);
+class NavigationDaw extends StatefulWidget {
+  const NavigationDaw({Key? key}) : super(key: key);
 
   @override
-  State<NavigationDrawer> createState() => _NavigationDrawerState();
+  State<NavigationDaw> createState() => _NavigationDawState();
 }
 
-class _NavigationDrawerState extends State<NavigationDrawer> {
+class _NavigationDawState extends State<NavigationDaw> {
   final Padding = EdgeInsets.symmetric(horizontal: 20);
   @override
   Widget build(BuildContext context) {
